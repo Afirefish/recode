@@ -1,0 +1,9 @@
+{
+	Filter = {
+		Bundles = (
+			"com.apple.mobilephone",
+			"com.tencent.xin",
+			"com.apple.springboard",
+		);
+	};
+}

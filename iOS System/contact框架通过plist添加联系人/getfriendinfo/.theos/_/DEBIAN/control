@@ -1,0 +1,10 @@
+Package: com.lingyongqian.getfirendinfo
+Name: GetFirendInfo
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: get friends info!
+Maintainer: daixijia
+Author: daixijia
+Section: Tweaks
+Version: 0.0.1-54+debug
+Installed-Size: 144

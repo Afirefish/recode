@@ -1,0 +1,11 @@
+Package: com.lingyongqian.notecount
+Name: NoteCount
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: Make count for note!
+Maintainer: daixijia
+Author: daixijia
+Section: Tweaks
+Homepage:http://www.baidu.com
+Version: 0.0.1-24+debug
+Installed-Size: 136

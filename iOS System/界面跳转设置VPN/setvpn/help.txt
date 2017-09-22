@@ -1,0 +1,39 @@
+VPNController : PSListController
+不能直接hook VPNController 因此hook PSListController，然后判断其类型
+-(void)tableView:(id)arg1 didSelectRowAtIndexPath:(id)arg2 ;
+
+-(void)addVPNConfiguration:(id)arg1 ;//这参数没办法获得
+
+
+VPNSetupListController：PSListController
+
+-(void)saveButtonClicked:(id)arg1 ;//传个button
+
+
+
+
+	vpnSetup = [[objc_getClass("VPNSetupListController") alloc] init];
+    [vpnSetup setDisplayName:@"displayName" forSpecifier:nil];
+    [vpnSetup setVPNType:(__bridge CFStringRef)type forSpecifier:nil];
+    [vpnSetup setServer:server forSpecifier:nil];
+    [vpnSetup setUsername:username forSpecifier:nil];
+    [vpnSetup setPassword:password forSpecifier:nil];
+    [vpnSetup setSendAllTraffic:[NSNumber numberWithBool:YES] forSpecifier:nil];
+    [vpnSetup setPPTPEncryptionLevel:@1 forSpecifier:nil];
+
+    if ([vpnSetup respondsToSelector:@selector()])
+    {
+        [vpnSetup saveConfig saveConfigurationSettings urationSettings];
+    }
+    else if ([vpnSetup respondsToSelector:@selector(_saveConfigurationSettings)])
+    {
+        [vpnSetup _saveConfigurationSettings];
+    }
+    else
+    {
+        DbgLog(@"cant saveConfigurationSettings");
+        return;
+    }
+
+    sleep(2);
+}

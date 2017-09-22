@@ -1,0 +1,10 @@
+Package: com.lingyongqian.lowveraddcontact
+Name: LowVerAddContact
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: set lower version for contact!
+Maintainer: daixijia
+Author: daixijia
+Section: Tweaks
+Version: 0.0.1-20+debug
+Installed-Size: 124

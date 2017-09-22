@@ -1,0 +1,45 @@
+%hook AddFriendEntryViewController
+- (void)alertView:(id)arg1 clickedButtonAtIndex:(long long)arg2 { %log; %orig; }
+- (void)dealloc { %log; %orig; }
+- (unsigned int)getBottleUnreadCount { %log; unsigned int r = %orig; HBLogDebug(@" = %u", r); return r; }
+- (unsigned int)getBottleUnreadCountAtTarbar { %log; unsigned int r = %orig; HBLogDebug(@" = %u", r); return r; }
+- (id)getVCWithDeepLinkName:(id)arg1 { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (id)init { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)initDeepLinkConfig { %log; %orig; }
+- (void)initLeftButton { %log; %orig; }
+- (void)initSearchFooterView { %log; %orig; }
+- (void)initTableView { %log; %orig; }
+- (void)initTitle { %log; %orig; }
+- (void)initView { %log; %orig; }
+- (void)setInviteScene:(unsigned int )inviteScene { %log; %orig; }
+- (unsigned int )inviteScene { %log; unsigned int  r = %orig; HBLogDebug(@" = %u", r); return r; }
+- (void)layoutSearchFooterView { %log; %orig; }
+- (void)setM_bShowInvite:(_Bool )m_bShowInvite { %log; %orig; }
+- (_Bool )m_bShowInvite { %log; _Bool  r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (void)setM_nsUserNameToFind:(NSString *)m_nsUserNameToFind { %log; %orig; }
+- (NSString *)m_nsUserNameToFind { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)makeCell:(id)arg1 CellInfo:(id)arg2 { %log; %orig; }
+- (void)onCancel:(id)arg1 { %log; %orig; }
+- (void)onMainWindowFrameChanged { %log; %orig; }
+- (void)onRadarSearchCreateViewShow { %log; %orig; }
+- (void)onRadarSearchViewShow { %log; %orig; }
+- (void)onSelectCell:(id)arg1 { %log; %orig; }
+- (void)onSelectQQCell:(id)arg1 { %log; %orig; }
+- (void)onShowInviteList:(id)arg1 { %log; %orig; }
+- (void)onShowMyQrCode { %log; %orig; }
+- (void)pluginsChanged:(id)arg1 { %log; %orig; }
+- (void)reloadData { %log; %orig; }
+- (void)scrollViewDidScroll:(id)arg1 { %log; %orig; }
+- (void)setSearchScene:(unsigned int )searchScene { %log; %orig; }
+- (unsigned int )searchScene { %log; unsigned int  r = %orig; HBLogDebug(@" = %u", r); return r; }
+- (void)showRecoverViewWithName:(id)arg1 { %log; %orig; }
+- (void)touchesBegan_TableView:(id)arg1 withEvent:(id)arg2 { %log; %orig; }
+- (void)updateViewWhenSelectTab:(_Bool)arg1 { %log; %orig; }
+- (void)viewDidAppear:(_Bool)arg1 { %log; %orig; }
+- (void)viewDidLayoutSubviews { %log; %orig; }
+- (void)viewDidLoad { %log; %orig; }
+- (NSString *)debugDescription { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (NSString *)description { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (unsigned long long )hash { %log; unsigned long long  r = %orig; HBLogDebug(@" = %llu", r); return r; }
+- (Class )superclass { %log; Class  r = %orig; HBLogDebug(@" = %@", r); return r; }
+%end

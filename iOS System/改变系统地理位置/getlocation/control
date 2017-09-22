@@ -1,0 +1,9 @@
+Package: com.lingyongqian.getlocation
+Name: GetLocation
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: get the system location!
+Maintainer: daixijia
+Author: daixijia
+Section: Tweaks
