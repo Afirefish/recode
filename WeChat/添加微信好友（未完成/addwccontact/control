@@ -1,0 +1,9 @@
+Package: com.lingyongqian.addwccontact
+Name: AddWCContact
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Add WeChat contact!
+Maintainer: daixijia
+Author: daixijia
+Section: Tweaks

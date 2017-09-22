@@ -1,0 +1,10 @@
+Package: com.lingyongqian.wcvideodownload
+Name: WCVideoDownload
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: WeChat Video Download!
+Maintainer: daixijia
+Author: daixijia
+Section: Tweaks
+Version: 1.0-15+debug
+Installed-Size: 140

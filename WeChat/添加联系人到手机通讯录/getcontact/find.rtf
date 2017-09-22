@@ -1,0 +1,98 @@
+{\rtf1\ansi\ansicpg936\cocoartf1504\cocoasubrtf820
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset134 PingFangSC-Regular;\f2\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red180\green36\blue25;\red255\green255\blue255;
+\red170\green13\blue145;\red0\green0\blue0;\red203\green35\blue57;\red255\green255\blue255;\red27\green31\blue34;
+\red91\green40\blue180;\red38\green38\blue38;\red109\green109\blue109;\red115\green0\blue2;\red52\green52\blue52;
+\red16\green121\blue2;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c0\c0;\cssrgb\c76409\c21698\c12524;\csgray\c100000;
+\csgenericrgb\c66500\c5200\c56900;\csgray\c0;\cssrgb\c84314\c22745\c28627;\cssrgb\c100000\c100000\c100000;\cssrgb\c14118\c16078\c18039;
+\cssrgb\c43529\c25882\c75686;\cssrgb\c20000\c20000\c20000;\cssrgb\c50196\c50196\c50196\c4706;\cssrgb\c53333\c0\c0;\cssrgb\c26667\c26667\c26667;
+\cssrgb\c0\c53333\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14680\viewh14120\viewkind0
+\deftab543
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 ContactInfoViewController
+\f1 \'c0\'e0\'bd\'f8\'d0\'d0\'cf\'ea\'cf\'b8\'b5\'c4\'d7\'ca\'c1\'cf\'b5\'c4\'bf\'d8\'d6\'c6
+\f0  \
+    CContact *m_contact
+\f1 \'b5\'c4\'ca\'f4\'d0\'d4\'b1\'a3\'b4\'e6\'d7\'c5\'c1\'aa\'cf\'b5\'c8\'cb\'b5\'c4\'d7\'ca\'c1\'cf\
+
+\f0     NSString *m_nsCountry;
+\f1 \'b9\'fa\'bc\'d2
+\f0 \
+    NSString *m_nsProvince;
+\f1 \'ca\'a1\'b7\'dd
+\f0 \
+    NSString *m_nsCity;
+\f1 \'b3\'c7\'ca\'d0
+\f0 \
+    NSString *m_pcWCBGImgID;
+\f1 \'b1\'b3\'be\'b0\'cd\'bc\'c6\'ac\'a3\'a8\'b2\'bb\'ca\'c7\'cd\'b7\'cf\'f1\'a3\'a9\
+
+\f0     NSString *m_nsDescription;
+\f1 \'b6\'d4\'c1\'aa\'cf\'b5\'c8\'cb\'b5\'c4\'c3\'e8\'ca\'f6
+\f0 \
+    NSString *m_nsCardUrl;
+\f1 \'b6\'d4\'c1\'aa\'cf\'b5\'c8\'cb\'c3\'e8\'ca\'f6\'b5\'c4\'cd\'bc\'c6\'ac
+\f0 \
+    NSArray *m_arrPhoneItem;
+\f1 \'c1\'aa\'cf\'b5\'c8\'cb\'b5\'e7\'bb\'b0
+\f0  
+\fs36 \cf3 \cb4 PhoneItemInfo
+\f1\fs22 \cf2 \cb1 \'c0\'e0
+\f0\fs36 \cf3 \cb4 \
+
+\fs22 \cf2 \cb1 \
+Contact - (\cf5 id\cf2 )getNormalContactDisplayDesc;\
++ (\cf5 _Bool\cf2 )isWeAppUserName:(\cf5 id\cf2 )arg1;
+\f1 \'ce\'a2\'d0\'c5id 
+\f0\fs36 \cf6 \cb4 wxid_5xl1smfgxnx452\
+\
+
+\fs22 \cf2 \cb1 CContactMgr\
+- (\cf5 id\cf2 )getContactByName:(\cf5 id\cf2 )arg1; id 
+\fs36 \cf6 \cb4 wxid_5xl1smfgxnx452
+\fs22 \cf2 \cb1 \
+- (\cf5 id\cf2 )getContactFromDic:(\cf5 id\cf2 )arg1; id 
+\fs36 \cf6 \cb4 wxid_5xl1smfgxnx452
+\fs22 \cf2 \cb1 \
+\
+\
+\cf5 @protocol\cf2  IContactMgrExt\
+\
+@\cf5 interface \cf2 FriendAsistSessionMgr \cf5 \
+\cf2 - (\cf5 void\cf2 )onNewContact:(\cf5 id\cf2 )arg1;\
+\
+\cf5 @interface\cf2  UpdateProfileMgr\
+- (\cf5 void\cf2 )onModifySelfContact:(\cf5 id\cf2 )arg1;\
+\
+\
+\
+
+\f1 \'b6\'d4\'d3\'damobilephone app\'c0\'b4\'cb\'b5\
+\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\fs24 \cf7 \cb8 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \outl0\strokewidth0 \strokec7 @interface\cf9 \strokec9  \cf10 \strokec10 CNContact
+\fs22 \cf2 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 \outl0\strokewidth0 \
+
+\fs24 \cf7 \cb8 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \outl0\strokewidth0 \strokec7 @interface\cf9 \strokec9  \cf10 \strokec10 CNMutableContact\cf9 \strokec9  
+\fs22 \cf2 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 \outl0\strokewidth0 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\fs28 \cf11 \cb12 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \outl0\strokewidth0 \strokec11 CNMutableContact *contact = [[CNMutableContact alloc] init]\cf13 \strokec13 ;
+\f0\fs36 \cf6 \cb4 \kerning1\expnd0\expndtw0 \CocoaLigature0 \outl0\strokewidth0 \
+
+\f2\fs28 \cf11 \cb12 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \outl0\strokewidth0 \strokec11  contact\cf14 \strokec14 .givenName\cf11 \strokec11  \
+ contact\cf14 \strokec14 .familyName\
+\cf11 \strokec11 CNLabeledValue *homePhone = [CNLabeledValue labeledValueWithLabel:CNLabelPhoneNumberiPhone value:[CNPhoneNumber phoneNumberWithStringValue:@\cf15 \strokec15 ""]];\
+
+\f0\fs22 \cf2 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 \outl0\strokewidth0 \
+}

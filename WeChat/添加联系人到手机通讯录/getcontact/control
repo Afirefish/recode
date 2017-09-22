@@ -1,0 +1,9 @@
+Package: com.lingyongqian.getcontact
+Name: getContact
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: get the contact!
+Maintainer: daixijia
+Author: daixijia
+Section: Tweaks

@@ -1,0 +1,9 @@
+Package: com.lingyongqian.addwcfirend
+Name: AddWCFriend
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Add WC Friend through username or v1!
+Maintainer: daixijia
+Author: daixijia
+Section: Tweaks

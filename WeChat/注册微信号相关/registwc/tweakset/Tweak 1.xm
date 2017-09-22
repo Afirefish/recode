@@ -1,0 +1,28 @@
+%hook CreateVoicePrintViewController
+- (void)OnEnvironmentReCheckButton:(id)arg1 { %log; %orig; }
+- (void)OnNextButtonPress:(id)arg1 { %log; %orig; }
+- (void)OnTalkButtonPress:(id)arg1 { %log; %orig; }
+- (void)SetIsFirstStep:(_Bool)arg1 { %log; %orig; }
+- (void)ShowCreateDoneSceneWithSuccessWording:(id)arg1 { %log; %orig; }
+- (void)ShowCreateErrorAndMustEscScene:(int)arg1 { %log; %orig; }
+- (void)ShowEnvironmentCheckScene:(_Bool)arg1 { %log; %orig; }
+- (void)ShowFirstGuideScene { %log; %orig; }
+- (void)ShowRecordScene { %log; %orig; }
+- (void)ShowRedoScene { %log; %orig; }
+- (void)ShowSecondGuideScene { %log; %orig; }
+- (void)ShowStepView { %log; %orig; }
+- (void)backButtonDone:(id)arg1 { %log; %orig; }
+- (void)dealloc { %log; %orig; }
+- (id)init { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)initBaseView { %log; %orig; }
+- (void)initHoldTipView { %log; %orig; }
+- (void)initStepLabel { %log; %orig; }
+- (void)makeCheckEnvironmentView { %log; %orig; }
+- (void)makeNextButton { %log; %orig; }
+- (void)onTalkButtonCancel:(id)arg1 { %log; %orig; }
+- (void)onTryVerifyBtn:(id)arg1 { %log; %orig; }
+- (void)startDoGuideTextAnimation { %log; %orig; }
+- (void)startGetResource { %log; %orig; }
+- (void)stopGetResource { %log; %orig; }
+- (void)viewDidLoad { %log; %orig; }
+%end

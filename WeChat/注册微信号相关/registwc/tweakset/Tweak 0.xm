@@ -1,0 +1,72 @@
+%hook WCAccountPhoneLoginControlLogic
+- (void)DidEnterBackground:(id)arg1 { %log; %orig; }
+- (void)DidEnterForeground:(id)arg1 { %log; %orig; }
+- (void)cancelAllEvent { %log; %orig; }
+- (void)checkHavePwd { %log; %orig; }
+- (_Bool)checkPhoneNumberStatus:(unsigned int)arg1 { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)checkVerifyCode:(id)arg1 { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (void)dealloc { %log; %orig; }
+- (void)forceRegisterForPhone { %log; %orig; }
+- (id)getArchive { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)getVerifyCode { %log; %orig; }
+- (_Bool)getVerifyCodeReady { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)getVoideVerifyCodeReady:(id)arg1 { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (id)initWithData:(id)arg1 { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)jumpToManulLoginControlMgrToRegister:(id)arg1 { %log; %orig; }
+- (void)loginAccount { %log; %orig; }
+- (void)loginForPhone { %log; %orig; }
+- (void)login_but_registerForPhone { %log; %orig; }
+- (void)onByPhonePwdLoginByVerifyCode:(id)arg1 phoneNumber:(id)arg2 { %log; %orig; }
+- (void)onCheckForgetPwdVerifyCode:(id)arg1 userName:(id)arg2 password:(id)arg3 StyleKeyValue:(id)arg4 { %log; %orig; }
+- (void)onCheckLoginPhoneNumberStatus:(id)arg1 countryCode:(id)arg2 phoneNumber:(id)arg3 formatedPhoneNumber:(id)arg4 StyleKeyValue:(id)arg5 { %log; %orig; }
+- (void)onCheckLoginVerifyCode:(id)arg1 ticket:(id)arg2 controlShowFlag:(unsigned int)arg3 userName:(id)arg4 password:(id)arg5 StyleKeyValue:(id)arg6 { %log; %orig; }
+- (void)onCheckRegPhoneNumberStatus:(id)arg1 countryCode:(id)arg2 phoneNumber:(id)arg3 formatedPhoneNumber:(id)arg4 StyleKeyValue:(id)arg5 { %log; %orig; }
+- (void)onCheckRegVerifyCode:(id)arg1 ticket:(id)arg2 controlShowFlag:(unsigned int)arg3 userName:(id)arg4 password:(id)arg5 StyleKeyValue:(id)arg6 { %log; %orig; }
+- (void)onFacebookConnect { %log; %orig; }
+- (void)onFillPhoneBack { %log; %orig; }
+- (void)onFillPhoneFromRegToLogin { %log; %orig; }
+- (void)onFillPhoneGoToSecurityCenter { %log; %orig; }
+- (void)onFillPhoneLoginByQQ { %log; %orig; }
+- (void)onFillPhoneNext:(id)arg1 phoneNumber:(id)arg2 { %log; %orig; }
+- (void)onFillPhoneNext:(id)arg1 phoneNumber:(id)arg2 pwd:(id)arg3 { %log; %orig; }
+- (void)onFillPhoneReg { %log; %orig; }
+- (void)onGetForgetPwdVerifyCode:(id)arg1 StyleKeyValue:(id)arg2 { %log; %orig; }
+- (void)onGetForgetPwdVoiceVerifyCode:(id)arg1 StyleKeyValue:(id)arg2 { %log; %orig; }
+- (void)onGetLoginVerifyCode:(id)arg1 StyleKeyValue:(id)arg2 { %log; %orig; }
+- (void)onGetLoginVoiceVerifyCode:(id)arg1 StyleKeyValue:(id)arg2 { %log; %orig; }
+- (void)onGetRegVerifyCode:(id)arg1 StyleKeyValue:(id)arg2 { %log; %orig; }
+- (void)onGetRegVoiceVerifyCode:(id)arg1 StyleKeyValue:(id)arg2 { %log; %orig; }
+- (void)onGetVerifyCode:(id)arg1 StyleKeyValue:(id)arg2 { %log; %orig; }
+- (void)onGetVoiceVerifyCode:(id)arg1 StyleKeyValue:(id)arg2 { %log; %orig; }
+- (void)onLoginByQRCode { %log; %orig; }
+- (_Bool)onManualAuthControlLogicError:(id)arg1 { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (void)onManualAuthControlLogicStop:(unsigned long long)arg1 response:(id)arg2 { %log; %orig; }
+- (void)onPhoneVerifyAgain { %log; %orig; }
+- (void)onPhoneVerifyBack { %log; %orig; }
+- (void)onPhoneVerifyNext:(id)arg1 { %log; %orig; }
+- (void)onPhoneVerifyVoice { %log; %orig; }
+- (void)onRegByOldPhoneBack { %log; %orig; }
+- (void)onRegByOldPhoneContinueReg { %log; %orig; }
+- (void)onRegByOldPhoneLogin { %log; %orig; }
+- (void)onSafeDeviceControlLogicCancel { %log; %orig; }
+- (void)onSafeDeviceControlLogicReturnOK { %log; %orig; }
+- (void)onSetPasswordBack { %log; %orig; }
+- (void)onSetPasswordOK { %log; %orig; }
+- (void)onSignUpWithQQ { %log; %orig; }
+- (void)onVoiceVerifyBack { %log; %orig; }
+- (void)onVoiceVerifyGetVerifyCode:(id)arg1 { %log; %orig; }
+- (void)onWCBaseLogicDidStop:(unsigned int)arg1 { %log; %orig; }
+- (void)pause { %log; %orig; }
+- (_Bool)recoverFromArchive:(id)arg1 { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (void)registerForPhone { %log; %orig; }
+- (void)resume { %log; %orig; }
+- (void)startLogic { %log; %orig; }
+- (NSString *)debugDescription { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (NSString *)description { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (unsigned long long )hash { %log; unsigned long long  r = %orig; HBLogDebug(@" = %llu", r); return r; }
+- (Class )superclass { %log; Class  r = %orig; HBLogDebug(@" = %@", r); return r; }
+%end
+
+
+
+

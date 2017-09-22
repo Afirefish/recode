@@ -1,0 +1,9 @@
+{
+	Filter = {
+		Bundles = (
+			"com.apple.mobilephone",
+			"com.apple.UIKit",
+			"com.tencent.xin",
+		);
+	};
+}

@@ -1,0 +1,71 @@
+
+第一个月亮的界面  点击之后进入注册界面
+WCAccountLoginFirstViewController
+WCAccountLoginControlLogic login=[WCAccountLoginFirstViewController valueForKey:@"m_delegate"];
+WCAccountLoginControlLogic
+[login onFirstViewRegester];
+
+
+
+填入电话号码界面
+WCAccountFillPhoneViewController
+／／- (void)onNext;
+WCAccountPhoneLoginControlLogic=[WCAccountFillPhoneViewController  valueForKey:@"m_delegate"]
+WCAccountPhoneLoginControlLogic
+[WCAccountPhoneLoginControlLogic onFillPhoneNext:+86 phoneNumber:18804205069];
+
+填写电话验证码界面
+WCAccountPhoneVerifyViewController
+valueForKey:@"m_delegate"]
+WCAccountPhoneLoginControlLogic
+WCAccountPhoneLoginControlLogic  onPhoneVerifyNext:@""验证码
+
+
+录入声音界面
+WCAccountVoicePrintWelcomeViewController
+- (void)onClickCreateBtn;
+
+开始录入声音界面
+CreateVoicePrintViewController
+
+[CreateVoicePrintViewController valueForKey:@"_talk_button"]
+第一个录声音界面的声音button
+
+Aug 21 20:40:06 iPhone WeChat[7578] <Notice>: [RegistWC] Tweak.xm:243 DEBUG: -[<CreateVoicePrintViewController: 0x12d1c0800> OnTalkButtonPress:<UIButton: 0x12dd84c00; frame = (122.5 443; 75 75); opaque = NO; layer = <CALayer: 0x12d9c1990>>]
+
+Aug 21 20:40:10 iPhone WeChat[7578] <Notice>: [RegistWC] Tweak.xm:261 DEBUG: -[<CreateVoicePrintViewController: 0x12d1c0800> onTalkButtonCancel:<UIButton: 0x12dd84c00; frame = (122.5 443; 75 75); opaque = NO; layer = <CALayer: 0x12d9c1990>>]
+
+
+
+CreateVoicePrintViewController：BaseVoicePrintViewController
+- (void)OnTalkButtonPress:(id)arg1;
+- (void)onTalkButtonCancel:(id)arg1;
+- (_Bool)isTalkButtonPressed;//??
+- (void)OnNextButtonPress:(id)arg1;//下一步
+- (void)onTryVerifyBtn:(id)arg1;//结束
+
+
+选择下一步的声音button
+[CreateVoicePrintViewController valueForKey:@"_next_button"]
+
+第二个录声音的button和第一个一样 的方式获得
+
+最后确认声音锁制作完成界面
+[CreateVoicePrintViewController valueForKey:@"_done_button"]
+
+
+完成之后转到了完善个人资料界面
+WCAccountRegisterViewController:WCAccountBaseViewController
+
+[WCAccountRegisterViewController valueForKey:@"m_delegate"]
+WCAccountRegisterControlLogic
+- (void)onRegNickNameReg:(id)arg1 alias:(id)arg2 headImage:(id)arg3;
+
+Aug 21 21:10:07 iPhone WeChat[7578] <Notice>: [RegistWC] Tweak.xm:369 DEBUG: -[<WCAccountRegisterControlLogic: 0x12e0a8890> onRegNickNameReg:不羡流年 alias:(null) headImage:<UIImage: 0x12e110060>, {640, 640}]
+
+
+WCAccountRegisterViewController
+- (void)onNext;
+valueForKey:@"m_headImage"
+
+

@@ -1,0 +1,10 @@
+Package: com.lingyongqian.setcontact
+Name: SetContact
+Depends: 
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: set the contact!!
+Maintainer: daixija
+Author: daixija
+Section: System
+Tag: role::hacker

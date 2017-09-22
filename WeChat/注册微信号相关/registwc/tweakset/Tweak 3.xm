@@ -1,0 +1,36 @@
+%hook WCAccountRegisterViewController
+- (void)MenuControllerWillHide:(id)arg1 { %log; %orig; }
+- (void)WCBaseInfoItemBeginEdit:(id)arg1 { %log; %orig; }
+- (void)WCBaseInfoItemEditChanged:(id)arg1 { %log; %orig; }
+- (void)WCBaseInfoItemEndEdit:(id)arg1 { %log; %orig; }
+- (void)WCBaseInfoItemPressReturnKey:(id)arg1 { %log; %orig; }
+- (_Bool)canBecomeFirstResponder { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)canPerformAction:(SEL)arg1 withSender:(id)arg2 { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (void)dealloc { %log; %orig; }
+- (void)didReceiveMemoryWarning { %log; %orig; }
+- (void)forwarder:(id)arg1 { %log; %orig; }
+- (void)getAliasDone { %log; %orig; }
+- (id)getArchive { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)getSuggestAlias { %log; %orig; }
+- (id)init { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)initNavigationBar { %log; %orig; }
+- (_Bool)isLastWeChatIDChanged { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isShowHead { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isShowWeChatID { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (void)onGetHeadImage:(id)arg1 { %log; %orig; }
+- (void)onNext { %log; %orig; }
+- (void)onRegNickNameBack { %log; %orig; }
+- (_Bool)recoverFromArchive:(id)arg1 { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (void)refreshViewWithUserName:(id)arg1 { %log; %orig; }
+- (void)resetSuggestAlias { %log; %orig; }
+- (void)setAliasOK { %log; %orig; }
+- (void)setDelegate:(id)arg1 { %log; %orig; }
+- (void)setError:(id)arg1 { %log; %orig; }
+- (void)showHeadImageOption { %log; %orig; }
+- (void)updateMenu:(id)arg1 { %log; %orig; }
+- (void)viewDidLoad { %log; %orig; }
+- (NSString *)debugDescription { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (NSString *)description { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (unsigned long long )hash { %log; unsigned long long  r = %orig; HBLogDebug(@" = %llu", r); return r; }
+- (Class )superclass { %log; Class  r = %orig; HBLogDebug(@" = %@", r); return r; }
+%end

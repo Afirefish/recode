@@ -1,0 +1,8 @@
+ContactInfoViewController
+- (void)onSendVerifyMsg;
+
+
+
+SendVerifyMsgViewController 
+- (void)onSendVerifyMsg;//send 
+[SendVerifyMsgViewController valueForKey:@"m_oVerifyContact"]

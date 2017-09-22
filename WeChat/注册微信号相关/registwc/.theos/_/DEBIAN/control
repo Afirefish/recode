@@ -1,0 +1,10 @@
+Package: com.lingyongqian.registwc
+Name: RegistWC
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: daixijia
+Author: daixijia
+Section: Tweaks
+Version: 0.0.1-7+debug
+Installed-Size: 120

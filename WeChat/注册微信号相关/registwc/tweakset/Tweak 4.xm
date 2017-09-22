@@ -1,0 +1,45 @@
+%hook WCAccountBaseViewController
+- (void)WCBaseInfoItemPressReturnKey:(id)arg1 { %log; %orig; }
+- (void)callViewDidLoad { %log; %orig; }
+- (id)getArchive { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (id)getBothSideMarginInputLineView { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (id)getHeaderTipLabel:(id)arg1 { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (id)getHeaderView:(id)arg1 { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (id)getInputLineView { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (id)getNewHeaderView:(id)arg1 { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (unsigned int)getStayTime { %log; unsigned int r = %orig; HBLogDebug(@" = %u", r); return r; }
+- (void)hideKeyBoard { %log; %orig; }
+- (id)init { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)initData { %log; %orig; }
+- (void)initNavigationBar { %log; %orig; }
+- (void)initView { %log; %orig; }
+- (void)setM_nsStyleID:(NSString *)m_nsStyleID { %log; %orig; }
+- (NSString *)m_nsStyleID { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setM_uiReportStatus:(unsigned int )m_uiReportStatus { %log; %orig; }
+- (unsigned int )m_uiReportStatus { %log; unsigned int  r = %orig; HBLogDebug(@" = %u", r); return r; }
+- (id)makeHeaderView:(id)arg1 { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (id)makeNewHeaderView:(id)arg1 { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)onNext { %log; %orig; }
+- (_Bool)recoverFromArchive:(id)arg1 { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (void)refreshViewWithData:(id)arg1 { %log; %orig; }
+- (void)setNavigationLeftBarButtonStyle:(long long)arg1 target:(id)arg2 action:(SEL)arg3 { %log; %orig; }
+- (void)setNavigationRightBarButtonMoreStyleWithtarget:(id)arg1 action:(SEL)arg2 { %log; %orig; }
+- (void)setStartTime { %log; %orig; }
+- (void)setTableFooterView:(id)arg1 { %log; %orig; }
+- (void)setTableHeaderView:(id)arg1 { %log; %orig; }
+- (void)setupWithData:(id)arg1 { %log; %orig; }
+- (void)touchesBegan:(id)arg1 withEvent:(id)arg2 { %log; %orig; }
+- (_Bool)useCustomNavibar { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)useGrayBackgroundColor { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)useIpadSytle { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (void)viewDidAppear:(_Bool)arg1 { %log; %orig; }
+- (void)viewDidDisappear:(_Bool)arg1 { %log; %orig; }
+- (void)viewDidLayoutSubviews { %log; %orig; }
+- (void)viewDidLoad { %log; %orig; }
+- (void)viewDidTransitionToNewSize { %log; %orig; }
+- (void)viewWillAppear:(_Bool)arg1 { %log; %orig; }
+- (NSString *)debugDescription { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (NSString *)description { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (unsigned long long )hash { %log; unsigned long long  r = %orig; HBLogDebug(@" = %llu", r); return r; }
+- (Class )superclass { %log; Class  r = %orig; HBLogDebug(@" = %@", r); return r; }
+%end

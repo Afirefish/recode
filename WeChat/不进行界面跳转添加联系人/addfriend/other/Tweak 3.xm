@@ -1,0 +1,137 @@
+%hook CBaseContact
++ (void)initialize { %log; %orig; }
+- (id)chatRoomTopic { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (long long)compare:(id)arg1 { %log; long long r = %orig; HBLogDebug(@" = %lld", r); return r; }
+- (_Bool)copyFrom:(id)arg1 { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (NSString *)description { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)encodeWithCoder:(id)arg1 { %log; %orig; }
+- (void)setExternalInfoJSONCache:(NSDictionary *)externalInfoJSONCache { %log; %orig; }
+- (NSDictionary *)externalInfoJSONCache { %log; NSDictionary * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (id)getContactDisplayName { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (id)getContactDisplayUsrName { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (id)getContactHeadImage { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (id)getContactTalkRoomName { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (id)getEncodeUserName { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (int)getImageStatusCode { %log; int r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (id)getQQDisplayName { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (id)getRemark { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (id)getValueTypeTable { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (_Bool)hasContactDisplayUsrName { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)hasContactDisplayUsrNameByCache { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (id)init { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (id)initWithCoder:(id)arg1 { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (_Bool)isBlack { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isBrandSessionHolder { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isChatStatusNotifyOpen { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isChatroom { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isEnterpriseContact { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isEqualToContact:(id)arg1 { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isEqualToName:(id)arg1 { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isFavour { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isFileHelper { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isGroupCard { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isHasGMail { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isHasHDImg { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isHasQQ { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isHasQQDisplayName { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isLbsroom { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isMMContact { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isMacHelper { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isNeedGetHDImg { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isNeedGetUsrImg { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isNeedGetUsrImgWithoutCheckLocalFile { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isQQ { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isQQMBlog { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isSelf { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isSnsBlack { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isTemplateMsgHolder { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isValid { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isWeSportBlack { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isWeSportContact { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isWeixin { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)isWeixinTeamContact { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (id)localizedStringForMale:(id)arg1 female:(id)arg2 andUnkownSex:(id)arg3 { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setM_dtUsrImg:(NSData *)m_dtUsrImg { %log; %orig; }
+- (NSData *)m_dtUsrImg { %log; NSData * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (_Bool )m_isPlugin { %log; _Bool  r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (void)setM_nsAliasName:(NSString *)m_nsAliasName { %log; %orig; }
+- (NSString *)m_nsAliasName { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setM_nsAntispamTicket:(NSString *)m_nsAntispamTicket { %log; %orig; }
+- (NSString *)m_nsAntispamTicket { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setM_nsAtUserList:(NSString *)m_nsAtUserList { %log; %orig; }
+- (NSString *)m_nsAtUserList { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setM_nsDisplayNamePY:(NSString *)m_nsDisplayNamePY { %log; %orig; }
+- (NSString *)m_nsDisplayNamePY { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setM_nsDraft:(NSString *)m_nsDraft { %log; %orig; }
+- (NSString *)m_nsDraft { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setM_nsEncodeUserName:(NSString *)m_nsEncodeUserName { %log; %orig; }
+- (NSString *)m_nsEncodeUserName { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setM_nsFullPY:(NSString *)m_nsFullPY { %log; %orig; }
+- (NSString *)m_nsFullPY { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setM_nsGoogleContactName:(NSString *)m_nsGoogleContactName { %log; %orig; }
+- (NSString *)m_nsGoogleContactName { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setM_nsGoogleContactNickName:(NSString *)m_nsGoogleContactNickName { %log; %orig; }
+- (NSString *)m_nsGoogleContactNickName { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setM_nsHDImgStatus:(NSString *)m_nsHDImgStatus { %log; %orig; }
+- (NSString *)m_nsHDImgStatus { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setM_nsHeadHDImgUrl:(NSString *)m_nsHeadHDImgUrl { %log; %orig; }
+- (NSString *)m_nsHeadHDImgUrl { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setM_nsHeadHDMd5:(NSString *)m_nsHeadHDMd5 { %log; %orig; }
+- (NSString *)m_nsHeadHDMd5 { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setM_nsHeadImgUrl:(NSString *)m_nsHeadImgUrl { %log; %orig; }
+- (NSString *)m_nsHeadImgUrl { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setM_nsImgStatus:(NSString *)m_nsImgStatus { %log; %orig; }
+- (NSString *)m_nsImgStatus { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setM_nsMobileIdentify:(NSString *)m_nsMobileIdentify { %log; %orig; }
+- (NSString *)m_nsMobileIdentify { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setM_nsNickName:(NSString *)m_nsNickName { %log; %orig; }
+- (NSString *)m_nsNickName { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setM_nsQQNickName:(NSString *)m_nsQQNickName { %log; %orig; }
+- (NSString *)m_nsQQNickName { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setM_nsQQRemark:(NSString *)m_nsQQRemark { %log; %orig; }
+- (NSString *)m_nsQQRemark { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setM_nsRemark:(NSString *)m_nsRemark { %log; %orig; }
+- (NSString *)m_nsRemark { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setM_nsRemarkPYFull:(NSString *)m_nsRemarkPYFull { %log; %orig; }
+- (NSString *)m_nsRemarkPYFull { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setM_nsRemarkPYShort:(NSString *)m_nsRemarkPYShort { %log; %orig; }
+- (NSString *)m_nsRemarkPYShort { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setM_nsShortPY:(NSString *)m_nsShortPY { %log; %orig; }
+- (NSString *)m_nsShortPY { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setM_nsUsrName:(NSString *)m_nsUsrName { %log; %orig; }
+- (NSString *)m_nsUsrName { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setM_uiChatState:(unsigned int )m_uiChatState { %log; %orig; }
+- (unsigned int )m_uiChatState { %log; unsigned int  r = %orig; HBLogDebug(@" = %u", r); return r; }
+- (void)setM_uiConType:(unsigned int )m_uiConType { %log; %orig; }
+- (unsigned int )m_uiConType { %log; unsigned int  r = %orig; HBLogDebug(@" = %u", r); return r; }
+- (void)setM_uiDraftTime:(unsigned int )m_uiDraftTime { %log; %orig; }
+- (unsigned int )m_uiDraftTime { %log; unsigned int  r = %orig; HBLogDebug(@" = %u", r); return r; }
+- (void)setM_uiExtKey:(unsigned int )m_uiExtKey { %log; %orig; }
+- (unsigned int )m_uiExtKey { %log; unsigned int  r = %orig; HBLogDebug(@" = %u", r); return r; }
+- (void)setM_uiExtKeyAtLastGet:(unsigned int )m_uiExtKeyAtLastGet { %log; %orig; }
+- (unsigned int )m_uiExtKeyAtLastGet { %log; unsigned int  r = %orig; HBLogDebug(@" = %u", r); return r; }
+- (void)setM_uiFriendScene:(unsigned int )m_uiFriendScene { %log; %orig; }
+- (unsigned int )m_uiFriendScene { %log; unsigned int  r = %orig; HBLogDebug(@" = %u", r); return r; }
+- (void)setM_uiImgKey:(unsigned int )m_uiImgKey { %log; %orig; }
+- (unsigned int )m_uiImgKey { %log; unsigned int  r = %orig; HBLogDebug(@" = %u", r); return r; }
+- (void)setM_uiImgKeyAtLastGet:(unsigned int )m_uiImgKeyAtLastGet { %log; %orig; }
+- (unsigned int )m_uiImgKeyAtLastGet { %log; unsigned int  r = %orig; HBLogDebug(@" = %u", r); return r; }
+- (void)setM_uiQQUin:(unsigned int )m_uiQQUin { %log; %orig; }
+- (unsigned int )m_uiQQUin { %log; unsigned int  r = %orig; HBLogDebug(@" = %u", r); return r; }
+- (void)setM_uiSex:(unsigned int )m_uiSex { %log; %orig; }
+- (unsigned int )m_uiSex { %log; unsigned int  r = %orig; HBLogDebug(@" = %u", r); return r; }
+- (void)setM_uiType:(unsigned int )m_uiType { %log; %orig; }
+- (unsigned int )m_uiType { %log; unsigned int  r = %orig; HBLogDebug(@" = %u", r); return r; }
+- (unsigned int)realFriendScene { %log; unsigned int r = %orig; HBLogDebug(@" = %u", r); return r; }
+- (void)saveUserImage { %log; %orig; }
+- (void)setBlack:(_Bool)arg1 { %log; %orig; }
+- (void)setChatRoomTopic:(id)arg1 { %log; %orig; }
+- (void)setDisplayNamePY { %log; %orig; }
+- (void)setNickNameWithoutEmojiChange:(id)arg1 { %log; %orig; }
+- (void)setRemarkWithoutEmojiChange:(id)arg1 { %log; %orig; }
+- (void)setSnsBlack:(_Bool)arg1 { %log; %orig; }
+- (void)setWeSportBlack:(_Bool)arg1 { %log; %orig; }
+- (NSString *)debugDescription { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (unsigned long long )hash { %log; unsigned long long  r = %orig; HBLogDebug(@" = %llu", r); return r; }
+- (Class )superclass { %log; Class  r = %orig; HBLogDebug(@" = %@", r); return r; }
+%end
