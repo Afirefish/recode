@@ -1,0 +1,9 @@
+Package: com.lingyongqian.addwcv1contact
+Name: AddWCV1Contact
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: daxiijia
+Author: daxiijia
+Section: Tweaks
