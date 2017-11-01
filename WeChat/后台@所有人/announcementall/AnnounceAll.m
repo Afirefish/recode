@@ -62,6 +62,7 @@
         [wrap setM_uiMessageType:1];
         [wrap setM_nsMsgSource:trueMem];
         [wrap setM_nsMsgSource:finalStr];
+        //[wrap setM_nsAtUserList:trueMem];
         [wrap setM_uiStatus:1];
         [wrap setM_nsToUsr:RoomName];
         NSString *myWXID = [NSClassFromString(@"SettingUtil") getCurUsrName];
