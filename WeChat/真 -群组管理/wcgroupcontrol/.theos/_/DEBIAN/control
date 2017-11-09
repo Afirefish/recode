@@ -1,0 +1,10 @@
+Package: com.lingyongqian.wcgroupcontrol
+Name: WCGroupControl
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: daixijia
+Author: daixijia
+Section: Tweaks
+Version: 0.0.1-70+debug
+Installed-Size: 144
