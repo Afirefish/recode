@@ -30,6 +30,7 @@
 @property (strong,nonatomic) NSMutableArray *allChatRoomContact;//已经加入群的好友NSString
 @property (strong,nonatomic) NSMutableArray *noChatRoomContact;//未加入群的好友NSString
 @property (strong,nonatomic) NSMutableArray *addedContact;//添加了的好友
+@property (strong,nonatomic) NSMutableArray *previousChatRoomArr;//之前的聊天室
 
 @end
 
@@ -67,7 +68,7 @@
             NSLog(@" 第 %ld 次循环",(long)value ++);
             NSInteger count = [self.noChatRoomContact count];
             NSLog(@"count %ld",(long)count);
-            CContact *chatRoom = [self noFullChatRoom:5];
+            CContact *chatRoom = [self noFullChatRoom:10];
             if (chatRoom != nil) {
                 NSString *member = [self.noChatRoomContact objectAtIndex:i];
                 NSString *chatRoomName = [chatRoom valueForKey:@"m_nsUsrName"];
@@ -95,7 +96,18 @@
                         NSLog(@"建立新群");
                     });
                     sleep(3);
+                    self.previousChatRoomArr = self.myChatRoom;
                     [self reloadData];
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        NSString *newChatRoom = [self getNewChatRoomName];
+                        NSDate *senddate=[NSDate date];
+                        NSDateFormatter  *dateformatter=[[NSDateFormatter alloc] init];
+                        [dateformatter setDateFormat:@"YYYY-MM-dd-HH-mm-ss"];
+                        NSString *topic=[dateformatter stringFromDate:senddate];
+                        NSLog(@"topic %@",topic);
+                        [self changeChatRoom:newChatRoom topic:topic];
+                    });
+                    sleep(3);
                     i = -1;
                 }
             }
@@ -114,6 +126,14 @@
     }
     NSLog(@"noFullChatRoom");
     return nil;
+}
+
+- (NSString *)getNewChatRoomName {//获得新创建的群
+    NSPredicate * filterPredicate1 = [NSPredicate predicateWithFormat:@"NOT (SELF IN %@)",self.previousChatRoomArr];
+    NSArray *filter = [self.myChatRoom filteredArrayUsingPredicate:filterPredicate1];
+    //NSLog(@"filter count %@",[filter count]);
+    NSLog(@" new name %@",[[filter firstObject] valueForKey:@"m_nsUsrName"]);
+    return [[filter firstObject] valueForKey:@"m_nsUsrName"];
 }
 
 - (void)obtainNoChatRoomContact {//获得没有群组的联系人数组
@@ -175,6 +195,7 @@
     MMServiceCenter* serviceCenter = [[NSClassFromString(@"MMServiceCenter") class] defaultCenter];
     CGroupMgr *gMgr = [serviceCenter getService:[NSClassFromString(@"CGroupMgr") class]];
     [gMgr SetGroupTopic:chatRoomName withTopic:topic];
+    [gMgr ShowInContactBook:chatRoomName sync:YES];
     NSLog(@"changeChatRoom");
 }
 
